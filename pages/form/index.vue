@@ -3,6 +3,7 @@
 	import { onLoad } from "@dcloudio/uni-app"
 
 	import Questions from "@/data/questions.json"
+	import ImageBg from "@/data/team_image.json"
 
 	type Question = {
 		question : string;
@@ -116,10 +117,22 @@
 		})
 	}
 
+	const windowHeight = ref(0);
+	const bg = ref<string>()
 	onLoad((option) => {
+		uni.getSystemInfo({
+			success: (res) => {
+				let width = res.windowWidth;
+				let height = res.windowHeight;
+				windowHeight.value = height;
+				console.log('width', width);
+				console.log('height', height);
+			}
+		});
 		team.value = option.team
-		if (option.team && Questions[option.team]) {
+		if (option.team && Questions[option.team] && ImageBg[option.team]) {
 			questions.value = Questions[option.team]
+			bg.value = ImageBg[option.team];
 		} else {
 			uni.showModal({
 				title: "队伍选择有误，请重新选择",
@@ -130,22 +143,30 @@
 </script>
 
 <template>
-	<view>
-		<swiper v-if="questions.length" disable-touch circular :current="currentQuestionIndex">
-			<swiper-item v-for="({ question, options }, index) in questions" :key="question">
-				<view class="form__item" required>
-					<text class="question__text">{{ question }}</text>
-					<radio-group class="question__options" @change="({ detail }) => answer[index] = detail.value">
-						<label v-for="(option, index) in options" :key="option">
-							<radio :value="propertys[index]" />
-							<text>{{ option }}</text>
-						</label>
-					</radio-group>
-					<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
-						:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
-				</view>
-			</swiper-item>
-		</swiper>
+	<view class="content" :style="{height: windowHeight + 'px'}">
+		<image class="bg" :src="bg"></image>
+		<view class="options">
+			<swiper v-if="questions.length" disable-touch circular :current="currentQuestionIndex">
+				<swiper-item v-for="({ question, options }, index) in questions" :key="question">
+					<view class="form__item" required>
+						<text class="question__text">{{ question }}</text>
+						<radio-group class="question__options" @change="({ detail }) => answer[index] = detail.value">
+							<label v-for="(option, index) in options" :key="option">
+								<radio :value="propertys[index]" />
+								<text>{{ option }}</text>
+							</label>
+						</radio-group>
+						<!-- <button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
+							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button> -->
+						<view class="img-btn-view">
+							<image class="img-btn" src="/static/btn_next.png"></image>
+							<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
+								:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
+						</view>
+					</view>
+				</swiper-item>
+			</swiper>
+		</view>
 	</view>
 </template>
 
@@ -154,7 +175,30 @@
 		height: 100vh;
 		width: 100vw;
 	}
-
+	
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		height: 100%;
+	}
+	
+	.bg {
+		width: 100%;
+		height: 100%;
+		margin-top: 0rpx;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.options {
+		position:absolute;
+		// left:300rpx;
+		top:10rpx;
+	}
+	
 	.question {
 		&__text {
 			font-size: 50rpx;
@@ -178,5 +222,25 @@
 	.next-button {
 		margin-top: 60rpx;
 		padding: 10rpx 0;
+	}
+	
+	.img-btn-view {
+		position: relative;
+	}
+	
+	.img-btn-view > button {
+		background-color: transparent;
+		color: transparent;
+		width:500rpx;
+		height:100rpx;
+		left:0rpx;
+		top:0rpx;
+	}
+	.img-btn {
+		position:absolute;
+		width:500rpx;
+		height:100rpx;
+		left:100rpx;
+		top:0rpx;
 	}
 </style>
