@@ -19,7 +19,19 @@
 			<view class="lian-btn-view">
 				<image class="lian-btn" src="/static/btn_lian.png"></image>
 				<button type="primary" open-type="getUserInfo"
-					@getuserinfo="({ userInfo }) => start('lian')(userInfo)">aqours</button>
+					@getuserinfo="({ userInfo }) => start('lian')(userInfo)">lian</button>
+			</view>
+			
+			<view class="liella-btn-view">
+				<image class="liella-btn" src="/static/btn_liella.png"></image>
+				<button type="primary" open-type="getUserInfo"
+					@getuserinfo="({ userInfo }) => start('liella')(userInfo)">liella</button>
+			</view>
+			
+			<view class="hx-btn-view">
+				<image class="hx-btn" src="/static/btn_hx.png"></image>
+				<button type="primary" open-type="getUserInfo"
+					@getuserinfo="({ userInfo }) => start('hx')(userInfo)">hx</button>
 			</view>
 		</view>
 	</view>
@@ -103,10 +115,10 @@
 	
 	.miu-btn {
 		position:absolute;
-		width:400rpx;
-		height:200rpx;
-		left:-320rpx;
-		top:-50rpx;
+		width:530rpx;
+		height:240rpx;
+		left:-345rpx;
+		top:-75rpx;
 	}
 	
 	.aqours-btn-view > button {
@@ -141,5 +153,39 @@
 		height:200rpx;
 		left:-120rpx;
 		top:400rpx;
+	}
+	
+	.liella-btn-view > button {
+		background-color: transparent;
+		color: transparent;
+		width:270rpx;
+		height:180rpx;
+		left:105rpx;
+		top:-365rpx;
+	}
+	
+	.liella-btn {
+		position:absolute;
+		width:400rpx;
+		height:200rpx;
+		left:40rpx;
+		top:175rpx;
+	}
+	
+	.hx-btn-view > button {
+		background-color: transparent;
+		color: transparent;
+		width:260rpx;
+		height:180rpx;
+		left:-207rpx;
+		top:-545rpx;
+	}
+	
+	.hx-btn {
+		position:absolute;
+		width:317rpx;
+		height:200rpx;
+		left:-230rpx;
+		top:175rpx;
 	}
 </style>

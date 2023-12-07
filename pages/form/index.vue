@@ -140,6 +140,116 @@
 		}, '')
 	}
 	
+	const calcLiella = () => {
+		let score = 0
+		return answer.value.reduce((pre, cur, index) => {
+			score += cur === 'A' ? 1 : 0
+			if (index + 1 === 3) {
+				let result : string
+				if (score >= 2) {
+					result = 'E'
+				}
+				else {
+					result = 'I'
+				}
+				score = 0
+				return result
+			}
+			
+			if (index + 1 === 6) {
+				let result : string
+				if (score >= 2) {
+					result = 'S'
+				}
+				else {
+					result = 'N'
+				}
+				score = 0
+				return pre + result
+			}
+	
+			if (index + 1 === 9) {
+				let result : string
+				if (score >= 2) {
+					result = 'F'
+				}
+				else {
+					result = 'T'
+				}
+				score = 0
+				return pre + result
+			}
+	
+			if (index + 1 === 12) {
+				let result : string
+				if (score >= 2) {
+					result = 'J'
+				}
+				else {
+					result = 'P'
+				}
+				score = 0
+				return pre + result
+			}
+			return pre
+		}, '')
+	}
+	
+	const calcHx = () => {
+		let score = 0
+		return answer.value.reduce((pre, cur, index) => {
+			score += cur === 'A' ? 1 : 0
+			if (index + 1 === 3) {
+				let result : string
+				if (score >= 2) {
+					result = 'E'
+				}
+				else {
+					result = 'I'
+				}
+				score = 0
+				return result
+			}
+			
+			if (index + 1 === 6) {
+				let result : string
+				if (score >= 2) {
+					result = 'N'
+				}
+				else {
+					result = 'S'
+				}
+				score = 0
+				return pre + result
+			}
+	
+			if (index + 1 === 9) {
+				let result : string
+				if (score >= 2) {
+					result = 'F'
+				}
+				else {
+					result = 'T'
+				}
+				score = 0
+				return pre + result
+			}
+	
+			if (index + 1 === 12) {
+				let result : string
+				if (score >= 2) {
+					result = 'J'
+				}
+				else {
+					result = 'P'
+				}
+				score = 0
+				return pre + result
+			}
+			return pre
+		}, '')
+	}
+	
 	const next = () => {
 		currentQuestionIndex.value += 1
 	}
@@ -155,6 +265,12 @@
 				break
 			case 'lian':
 				result = calcLian()
+				break
+			case 'liella':
+				result = calcLiella()
+				break
+			case 'hx':
+				result = calcHx()
 				break
 			default:
 				break;

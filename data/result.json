@@ -30,5 +30,41 @@
 		"ENT": "/static/lian_hf.jpg",
 		"ESF": "/static/lian_ci.jpg",
 		"EST": "/static/lian_sha.jpg"
+	},
+	"liella": { 
+		"ENFJ": "/static/liella_xy.jpg",
+		"ENTJ": "/static/liella_xy.jpg",
+		"ESTJ": "/static/liella_mj.jpg",
+		"ESTP": "/static/liella_xm.jpg",
+		"INFJ": "/static/liella_nz.jpg",
+		"INTJ": "/static/liella_vn.jpg",
+		"ISTJ": "/static/liella_lian.jpg",
+		"ISTP": "/static/liella_sj.jpg",
+		"ENFP": "/static/liella_kk.jpg",
+		"ENTP": "/static/liella_qsd.jpg",
+		"ESFJ": "/static/liella_kk.jpg",
+		"ESFP": "/static/liella_mj.jpg",
+		"INFP": "/static/liella_yy.jpg",
+		"INTP": "/static/liella_sj.jpg",
+		"ISFJ": "/static/liella_dq.jpg",
+		"ISFP": "/static/liella_vn.jpg"
+	},
+	"hx": {
+		"INFJ": "/static/hx_bm.jpg",
+		"ESFP": "/static/hx_yb.jpg",
+		"ENTJ": "/static/hx_gxa.jpg",
+		"ISTJ": "/static/hx_ln.jpg",
+		"ENFP": "/static/hx_xia.jpg",
+		"ISFP": "/static/hx_gl.jpg",
+		"ESTP": "/static/hx_am.jpg",
+		"ESFJ": "/static/hx_xc.jpg",
+		"INFP": "/static/hx_bf.jpg",
+		"ENFJ": "/static/hx_zlz.jpg",
+		"INTP": "/static/hx_my.jpg",
+		"ISFJ": "/static/hx_kz.jpg",
+		"ESTJ": "/static/hx_bm.jpg",
+		"INTJ": "/static/hx_bm.jpg",
+		"ISTP": "/static/hx_bm.jpg",
+		"ENTP": "/static/hx_bm.jpg"
 	}
 }
