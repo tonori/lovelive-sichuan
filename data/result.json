@@ -20,5 +20,15 @@
 		"RZ": "/static/aqours_dy.jpg",
 		"GZ": "/static/aqours_gl.jpg",
 		"GY": "/static/aqours_jl.jpg"
+	},
+	"lian": { 
+		"INF": "/static/lian_lln.jpg",
+		"INT": "/static/lian_zl.jpg",
+		"ISF": "/static/lian_shao.jpg",
+		"IST": "/static/lian_shao.jpg",
+		"ENF": "/static/lian_hf.jpg",
+		"ENT": "/static/lian_hf.jpg",
+		"ESF": "/static/lian_ci.jpg",
+		"EST": "/static/lian_sha.jpg"
 	}
 }

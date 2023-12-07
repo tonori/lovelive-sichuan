@@ -16,9 +16,11 @@
 					@getuserinfo="({ userInfo }) => start('aqours')(userInfo)">aqours</button>
 			</view>
 			
-			
-			<!-- <button type="primary" open-type="getUserInfo"
-				@getuserinfo="({ userInfo }) => start('aqours')(userInfo)">Aqours</button> -->
+			<view class="lian-btn-view">
+				<image class="lian-btn" src="/static/btn_lian.png"></image>
+				<button type="primary" open-type="getUserInfo"
+					@getuserinfo="({ userInfo }) => start('lian')(userInfo)">aqours</button>
+			</view>
 		</view>
 	</view>
 </template>
@@ -122,5 +124,22 @@
 		height:200rpx;
 		left:40rpx;
 		top:-50rpx;
+	}
+	
+	.lian-btn-view > button {
+		background-color: transparent;
+		color: transparent;
+		width:270rpx;
+		height:180rpx;
+		left:-52rpx;
+		top:45rpx;
+	}
+	
+	.lian-btn {
+		position:absolute;
+		width:400rpx;
+		height:200rpx;
+		left:-120rpx;
+		top:400rpx;
 	}
 </style>

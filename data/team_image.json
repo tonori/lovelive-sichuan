@@ -1,4 +1,7 @@
 {
 	"muse": "/static/page_miu.jpg",
-	"aqours": "/static/page_aqours.jpg"
+	"aqours": "/static/page_aqours.jpg",
+	"hx": "/static/page_hx.jpg",
+	"liella": "/static/page_liella.jpg",
+	"lian": "/static/page_lian.jpg"
 }
