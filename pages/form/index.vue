@@ -113,7 +113,7 @@
 				score = 0
 				return result
 			}
-			
+
 			if (index + 1 === 6) {
 				let result : string
 				if (score >= 2) {
@@ -125,7 +125,7 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			if (index + 1 === 9) {
 				let result : string
 				if (score >= 2) {
@@ -137,11 +137,11 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			return pre
 		}, '')
 	}
-	
+
 	const calcLiella = () => {
 		let score = 0
 		return answer.value.reduce((pre, cur, index) => {
@@ -157,7 +157,7 @@
 				score = 0
 				return result
 			}
-			
+
 			if (index + 1 === 6) {
 				let result : string
 				if (score >= 2) {
@@ -169,7 +169,7 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			if (index + 1 === 9) {
 				let result : string
 				if (score >= 2) {
@@ -181,7 +181,7 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			if (index + 1 === 12) {
 				let result : string
 				if (score >= 2) {
@@ -196,7 +196,7 @@
 			return pre
 		}, '')
 	}
-	
+
 	const calcHx = () => {
 		let score = 0
 		return answer.value.reduce((pre, cur, index) => {
@@ -212,7 +212,7 @@
 				score = 0
 				return result
 			}
-			
+
 			if (index + 1 === 6) {
 				let result : string
 				if (score >= 2) {
@@ -224,7 +224,7 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			if (index + 1 === 9) {
 				let result : string
 				if (score >= 2) {
@@ -236,7 +236,7 @@
 				score = 0
 				return pre + result
 			}
-	
+
 			if (index + 1 === 12) {
 				let result : string
 				if (score >= 2) {
@@ -251,7 +251,7 @@
 			return pre
 		}, '')
 	}
-	
+
 	const next = () => {
 		currentQuestionIndex.value += 1
 	}
@@ -334,7 +334,7 @@
 						<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
 							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
 						<!-- <view class="img-btn-view">
-							<image class="img-btn" src="/static/btn_next.png"></image>
+							<image class="img-btn" src="https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/btn_next.png"></image>
 							<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
 								:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
 						</view> -->
@@ -350,7 +350,7 @@
 		height: 100vh;
 		width: 100vw;
 	}
-	
+
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -359,7 +359,7 @@
 		position: relative;
 		height: 100%;
 	}
-	
+
 	.bg {
 		width: 100%;
 		height: 100%;
@@ -367,13 +367,13 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 	.options {
-		position:absolute;
+		position: absolute;
 		// left:300rpx;
-		top:10rpx;
+		top: 10rpx;
 	}
-	
+
 	.question {
 		&__text {
 			font-size: 50rpx;
@@ -398,24 +398,25 @@
 		margin-top: 60rpx;
 		padding: 10rpx 0;
 	}
-	
+
 	.img-btn-view {
 		position: relative;
 	}
-	
-	.img-btn-view > button {
+
+	.img-btn-view>button {
 		background-color: transparent;
 		color: transparent;
-		width:500rpx;
-		height:100rpx;
-		left:0rpx;
-		top:0rpx;
+		width: 500rpx;
+		height: 100rpx;
+		left: 0rpx;
+		top: 0rpx;
 	}
+
 	.img-btn {
-		position:absolute;
-		width:500rpx;
-		height:100rpx;
-		left:100rpx;
-		top:0rpx;
+		position: absolute;
+		width: 500rpx;
+		height: 100rpx;
+		left: 100rpx;
+		top: 0rpx;
 	}
 </style>

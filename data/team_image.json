@@ -1,7 +1,7 @@
 {
-	"muse": "/static/page_miu.jpg",
-	"aqours": "/static/page_aqours.jpg",
-	"hx": "/static/page_hx.jpg",
-	"liella": "/static/page_liella.jpg",
-	"lian": "/static/page_lian.jpg"
+	"muse": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_miu.jpg",
+	"aqours": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_aqours.jpg",
+	"hx": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_hx.jpg",
+	"liella": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_liella.jpg",
+	"lian": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_lian.jpg"
 }
