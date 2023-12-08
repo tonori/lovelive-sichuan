@@ -28,6 +28,6 @@ lovelive-sichuan
 
 ## QQ小程序开发者工具
 https://q.qq.com/wiki/tools/devtool/
-
+gt
 ## HbuilderX
 https://hx.dcloud.net.cn/
