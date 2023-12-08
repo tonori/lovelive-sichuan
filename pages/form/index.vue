@@ -1,6 +1,8 @@
 1<script setup lang="ts">
 	import { computed, ref } from 'vue';
 	import { onLoad } from "@dcloudio/uni-app"
+	import { onShow } from "@dcloudio/uni-app"
+	import { onUnload } from "@dcloudio/uni-app"
 
 	import Questions from "@/data/questions.json"
 	import ImageBg from "@/data/team_image.json"
@@ -280,6 +282,10 @@
 		})
 	}
 
+	const innerAudioContext = uni.createInnerAudioContext();
+	innerAudioContext.autoplay = false;
+	innerAudioContext.loop = true;
+	
 	const windowHeight = ref(0);
 	const bg = ref<string>()
 	onLoad((option) => {
@@ -288,20 +294,26 @@
 				let width = res.windowWidth;
 				let height = res.windowHeight;
 				windowHeight.value = height;
-				console.log('width', width);
-				console.log('height', height);
 			}
 		});
 		team.value = option.team
 		if (option.team && Questions[option.team] && ImageBg[option.team]) {
 			questions.value = Questions[option.team]
 			bg.value = ImageBg[option.team];
+			innerAudioContext.src = "/static/" + option.team +".mp3";
 		} else {
 			uni.showModal({
 				title: "队伍选择有误，请重新选择",
 				confirmText: "返回首页"
 			})
 		}
+	})
+	
+	onShow((option) => {
+		innerAudioContext.play();
+	})
+	onUnload(() => {
+		innerAudioContext.stop();
 	})
 </script>
 
@@ -319,13 +331,13 @@
 								<text>{{ option }}</text>
 							</label>
 						</radio-group>
-						<!-- <button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
-							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button> -->
-						<view class="img-btn-view">
+						<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
+							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
+						<!-- <view class="img-btn-view">
 							<image class="img-btn" src="/static/btn_next.png"></image>
 							<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
 								:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
-						</view>
+						</view> -->
 					</view>
 				</swiper-item>
 			</swiper>

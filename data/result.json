@@ -50,21 +50,21 @@
 		"ISFP": "/static/liella_vn.jpg"
 	},
 	"hx": {
+		"INTP": "/static/hx_my.jpg",
+		"INFP": "/static/hx_bf.jpg",
 		"INFJ": "/static/hx_bm.jpg",
-		"ESFP": "/static/hx_yb.jpg",
-		"ENTJ": "/static/hx_gxa.jpg",
+		"INTJ": "/static/hx_bm.jpg",
+		"ISFJ": "/static/hx_kz.jpg",
 		"ISTJ": "/static/hx_ln.jpg",
-		"ENFP": "/static/hx_xia.jpg",
 		"ISFP": "/static/hx_gl.jpg",
+		"ISTP": "/static/hx_ln.jpg",
+		"ENFJ": "/static/hx_zlz.jpg",
+		"ENFP": "/static/hx_xia.jpg",
+		"ENTJ": "/static/hx_gxa.jpg",
+		"ENTP": "/static/hx_zlz.jpg",
 		"ESTP": "/static/hx_am.jpg",
 		"ESFJ": "/static/hx_xc.jpg",
-		"INFP": "/static/hx_bf.jpg",
-		"ENFJ": "/static/hx_zlz.jpg",
-		"INTP": "/static/hx_my.jpg",
-		"ISFJ": "/static/hx_kz.jpg",
-		"ESTJ": "/static/hx_bm.jpg",
-		"INTJ": "/static/hx_bm.jpg",
-		"ISTP": "/static/hx_bm.jpg",
-		"ENTP": "/static/hx_bm.jpg"
+		"ESFP": "/static/hx_yb.jpg",
+		"ESTJ": "/static/hx_xc.jpg"
 	}
 }

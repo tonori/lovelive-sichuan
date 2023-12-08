@@ -7,7 +7,13 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
 	import { onLoad } from '@dcloudio/uni-app'
+	import { onShow } from "@dcloudio/uni-app"
+	import { onUnload } from "@dcloudio/uni-app"
 	import Result from '@/data/result.json'
+
+	const innerAudioContext = uni.createInnerAudioContext();
+	innerAudioContext.autoplay = false;
+	innerAudioContext.loop = true;
 
 	const windowHeight = ref(0);
 	const result = ref<string>()
@@ -18,18 +24,24 @@
 				let width = res.windowWidth;
 				let height = res.windowHeight;
 				windowHeight.value = height;
-				console.log('width', width);
-				console.log('height', height);
 			}
 		});
 		if (team && property) {
 			result.value = Result[team][property]
+			innerAudioContext.src = "/static/" + team +".mp3";
 		} else {
 			uni.showModal({
 				title: "结果不正确，请重新作答",
 				confirmText: '返回首页'
 			})
 		}
+	})
+	
+	onShow((option) => {
+		innerAudioContext.play();
+	})
+	onUnload(() => {
+		innerAudioContext.stop();
 	})
 </script>
 

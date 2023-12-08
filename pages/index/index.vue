@@ -40,6 +40,8 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
 	import { onLoad } from "@dcloudio/uni-app"
+	import { onShow } from "@dcloudio/uni-app"
+	import { onHide } from "@dcloudio/uni-app"
 	const start = (team : string) => (userInfo : UniApp.GetUserInfoRes) => {
 		uni.setStorage({
 			key: 'userInfo',
@@ -48,7 +50,7 @@
 
 		uni.navigateTo({
 			url: `/pages/form/index?team=${team}`,
-		})/*  */
+		})
 	}
 	
 	const windowHeight = ref(0);
@@ -59,10 +61,21 @@
 				let width = res.windowWidth;
 				let height = res.windowHeight;
 				windowHeight.value = height;
-				console.log('width', width);
-				console.log('height', height);
 			}
 		});
+	})
+	
+	const innerAudioContext = uni.createInnerAudioContext();
+	innerAudioContext.autoplay = false;
+	innerAudioContext.loop = true;
+	innerAudioContext.src = "/static/main.mp3";
+	
+	
+	onShow((option) => {
+		innerAudioContext.play();
+	})
+	onHide(() => {
+		innerAudioContext.stop();
 	})
 </script>
 
