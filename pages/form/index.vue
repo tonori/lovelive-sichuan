@@ -1,8 +1,6 @@
 1<script setup lang="ts">
 	import { computed, ref } from 'vue';
-	import { onLoad } from "@dcloudio/uni-app"
-	import { onShow } from "@dcloudio/uni-app"
-	import { onUnload } from "@dcloudio/uni-app"
+	import { onLoad, onShow, onUnload, onHide, onShareAppMessage } from "@dcloudio/uni-app"
 
 	import Questions from "@/data/questions.json"
 	import ImageBg from "@/data/team_image.json"
@@ -11,6 +9,18 @@
 		question : string;
 		options : string[];
 	}
+
+	// #ifdef MP-QQ
+	onShareAppMessage(() => ({
+		shareTemplateId: '95A06A1683C80BECC99BE5CC7B6D706B',
+		shareTemplateData: {
+			"bottomBtnTxt": "我也试试",
+		},
+		path: `/pages/form/index?team=${team.value}`,
+		title: `我穿越到了 ${team.value} 的世界里！我竟然是...`,
+		imageUrl: "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/share_main.jpg"
+	}))
+	// #endif
 
 	const team = ref<string>()
 	const questions = ref<Question[]>([])
@@ -285,9 +295,10 @@
 	const innerAudioContext = uni.createInnerAudioContext();
 	innerAudioContext.autoplay = false;
 	innerAudioContext.loop = true;
-	
+
 	const windowHeight = ref(0);
 	const bg = ref<string>()
+
 	onLoad((option) => {
 		uni.getSystemInfo({
 			success: (res) => {
@@ -296,11 +307,13 @@
 				windowHeight.value = height;
 			}
 		});
+
 		team.value = option.team
+
 		if (option.team && Questions[option.team] && ImageBg[option.team]) {
 			questions.value = Questions[option.team]
 			bg.value = ImageBg[option.team];
-			innerAudioContext.src = "/static/" + option.team +".mp3";
+			innerAudioContext.src = "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/audio/" + option.team + ".mp3";
 		} else {
 			uni.showModal({
 				title: "队伍选择有误，请重新选择",
@@ -308,12 +321,17 @@
 			})
 		}
 	})
-	
-	onShow((option) => {
+
+	onShow(() => {
 		innerAudioContext.play();
 	})
+
 	onUnload(() => {
-		innerAudioContext.stop();
+		innerAudioContext.stop()
+	})
+
+	onHide(() => {
+		innerAudioContext.stop()
 	})
 </script>
 
@@ -331,13 +349,15 @@
 								<text>{{ option }}</text>
 							</label>
 						</radio-group>
-						<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
-							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
-						<!-- <view class="img-btn-view">
-							<image class="img-btn" src="https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/btn_next.png"></image>
+						<!-- 						<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
+							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button> -->
+						<view class="img-btn-view">
+							<image class="img-btn"
+								src="https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/btn_next.webp">
+							</image>
 							<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
 								:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button>
-						</view> -->
+						</view>
 					</view>
 				</swiper-item>
 			</swiper>

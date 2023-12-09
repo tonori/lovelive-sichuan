@@ -1,70 +1,246 @@
 {
 	"muse": {
-		"RX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_hng.jpg",
-		"GX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_xn.jpg",
-		"BY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_hw.jpg",
-		"RY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_lin.jpg",
-		"BX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_hy.jpg",
-		"BZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_zj.jpg",
-		"RZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_nk.jpg",
-		"GZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_hl.jpg",
-		"GY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/miu_xi.jpg"
+		"RX": {
+			"name": "穗乃果",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_hng.webp"
+		},
+		"GX": {
+			"name": "南小鸟",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_xn.webp"
+		},
+		"BY": {
+			"name": "田园海未",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_hw.webp"
+		},
+		"RY": {
+			"name": "星空凛",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_lin.webp"
+		},
+		"BX": {
+			"name": "小泉花阳",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_hy.webp"
+		},
+		"BZ": {
+			"name": "西木野真姬",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_zj.webp"
+
+		},
+		"RZ": {
+			"name": "矢泽妮可",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_nk.webp"
+		},
+		"GZ": {
+			"name": "绚濑绘里",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_hl.webp"
+		},
+		"GY": {
+			"name": "东条希",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/miu_xi.webp"
+		}
 	},
 	"aqours": {
-		"RX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_qg.jpg",
-		"GX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_yao.jpg",
-		"BY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_lz.jpg",
-		"RY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_hw.jpg",
-		"BX": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_sz.jpg",
-		"BZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_lb.jpg",
-		"RZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_dy.jpg",
-		"GZ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_gl.jpg",
-		"GY": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/aqours_jl.jpg"
+		"RX": {
+			"name": "高海千歌",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_qg.webp"
+		},
+		"GX": {
+			"name": "渡边曜",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_yao.webp"
+		},
+		"BY": {
+			"name": "桜内梨子",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_lz.webp"
+		},
+		"RY": {
+			"name": "国木田花丸",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_hw.webp"
+		},
+		"BX": {
+			"name": "津岛善子",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_sz.webp"
+		},
+		"BZ": {
+			"name": "黑泽露比",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_lb.webp"
+		},
+		"RZ": {
+			"name": "黑泽黛雅",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_dy.webp"
+		},
+		"GZ": {
+			"name": "松浦果南",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_gl.webp"
+		},
+		"GY": {
+			"name": "小原鞠莉",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/aqours_jl.webp"
+		}
 	},
 	"lian": {
-		"INF": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_lln.jpg",
-		"INT": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_zl.jpg",
-		"ISF": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_shao.jpg",
-		"IST": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_shao.jpg",
-		"ENF": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_hf.jpg",
-		"ENT": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_hf.jpg",
-		"ESF": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_ci.jpg",
-		"EST": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/lian_sha.jpg"
+		"INF": {
+			"name": "大泽瑠璃乃",
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_lln.webp"
+		},
+		"INT": {
+			"name": "夕雾缀理", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_zl.webp"
+		},
+		"ISF": {
+			"name": "乙宗梢", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_shao.webp"
+		},
+		"IST": {
+			"name": "乙宗梢", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_shao.webp"
+		},
+		"ENF": {
+			"name": "日野下花帆", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_hf.webp"
+		},
+		"ENT": {
+			"name": "日野下花帆", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_hf.webp"
+		},
+		"ESF": {
+			"name": "藤岛慈", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_ci.webp"
+		},
+		"EST": {
+			"name": "村野沙耶香", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/lian_sha.webp"
+		}
 	},
 	"liella": {
-		"ENFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_xy.jpg",
-		"ENTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_xy.jpg",
-		"ESTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_mj.jpg",
-		"ESTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_xm.jpg",
-		"INFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_nz.jpg",
-		"INTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_vn.jpg",
-		"ISTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_lian.jpg",
-		"ISTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_sj.jpg",
-		"ENFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_kk.jpg",
-		"ENTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_qsd.jpg",
-		"ESFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_kk.jpg",
-		"ESFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_mj.jpg",
-		"INFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_yy.jpg",
-		"INTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_sj.jpg",
-		"ISFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_dq.jpg",
-		"ISFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/liella_vn.jpg"
+		"ENFJ": {
+			"name": "涩谷香音", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_xy.webp"
+		},
+		"ENTJ": {
+			"name": "涩谷香音", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_xy.webp"
+		},
+		"ESTJ": {
+			"name": "平安名堇", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_mj.webp"
+		},
+		"ESTP": {
+			"name": "鬼冢夏美", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_xm.webp"
+		},
+		"INFJ": {
+			"name": "樱小路希奈子", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_nz.webp"
+		},
+		"INTJ": {
+			"name": "薇恩·玛格丽特", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_vn.webp"
+		},
+		"ISTJ": {
+			"name": "叶月恋", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_lian.webp"
+		},
+		"ISTP": {
+			"name": "若菜四季", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_sj.webp"
+		},
+		"ENFP": {
+			"name": "唐可可", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_kk.webp"
+		},
+		"ENTP": {
+			"name": "岚千砂都", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_qsd.webp"
+		},
+		"ESFJ": {
+			"name": "唐可可", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_kk.webp"
+		},
+		"ESFP": {
+			"name": "平安名堇", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_mj.webp"
+		},
+		"INFP": {
+			"name": "米女芽衣", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_yy.webp"
+		},
+		"INTP": {
+			"name": "若菜四季", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_sj.webp"
+		},
+		"ISFJ": {
+			"name": "鬼冢冬毬", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_dq.webp"
+		},
+		"ISFP": {
+			"name": "薇恩·玛格丽特", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/liella_vn.webp"
+		}
 	},
 	"hx": {
-		"INTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_my.jpg",
-		"INFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_bf.jpg",
-		"INFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_bm.jpg",
-		"INTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_bm.jpg",
-		"ISFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_kz.jpg",
-		"ISTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_ln.jpg",
-		"ISFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_gl.jpg",
-		"ISTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_ln.jpg",
-		"ENFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_zlz.jpg",
-		"ENFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_xia.jpg",
-		"ENTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_gxa.jpg",
-		"ENTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_zlz.jpg",
-		"ESTP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_am.jpg",
-		"ESFJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_xc.jpg",
-		"ESFP": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_yb.jpg",
-		"ESTJ": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/hx_xc.jpg"
+		"INTP": {
+			"name": "米娅·泰勒", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_my.webp"
+		},
+		"INFP": {
+			"name": "近江彼方", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_bf.webp"
+		},
+		"INFJ": {
+			"name": "上原步梦", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_bm.webp"
+		},
+		"INTJ": {
+			"name": "上原步梦", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_bm.webp"
+		},
+		"ISFJ": {
+			"name": "三船栞子", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_kz.webp"
+		},
+		"ISTJ": {
+			"name": "天王寺璃奈", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_ln.webp"
+		},
+		"ISFP": {
+			"name": "朝香果林", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_gl.webp"
+		},
+		"ISTP": {
+			"name": "天王寺璃奈", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_ln.webp"
+		},
+		"ENFJ": {
+			"name": "钟岚珠", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_zlz.webp"
+		},
+		"ENFP": {
+			"name": "中须霞", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_xia.webp"
+		},
+		"ENTJ": {
+			"name": "宫下爱", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_gxa.webp"
+		},
+		"ENTP": {
+			"name": "钟岚珠", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_zlz.webp"
+		},
+		"ESTP": {
+			"name": "艾玛·维尔德", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_am.webp"
+		},
+		"ESFJ": {
+			"name": "优木雪菜", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_xc.webp"
+		},
+		"ESFP": {
+			"name": "樱坂雫", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_yb.webp"
+		},
+		"ESTJ": {
+			"name": "优木雪菜", // Replace with the actual character name
+			"image": "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/hx_xc.webp"
+		}
 	}
+
 }

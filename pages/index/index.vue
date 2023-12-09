@@ -1,6 +1,7 @@
 <template>
 	<view class="content" :style="{height: windowHeight + 'px'}">
-		<image class="bg" src="https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/page_main.jpg">
+		<image class="bg"
+			src="https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/page_main.webp">
 		</image>
 		<view class="options">
 
@@ -45,9 +46,7 @@
 <!--  -->
 <script setup lang="ts">
 	import { ref } from 'vue';
-	import { onLoad } from "@dcloudio/uni-app"
-	import { onShow } from "@dcloudio/uni-app"
-	import { onHide } from "@dcloudio/uni-app"
+	import { onLoad, onShow, onUnload, onHide, onShareAppMessage } from "@dcloudio/uni-app"
 	const start = (team : string) => (userInfo : UniApp.GetUserInfoRes) => {
 		uni.setStorage({
 			key: 'userInfo',
@@ -59,29 +58,45 @@
 		})
 	}
 
+	// #ifdef MP-QQ
+	onShareAppMessage(() => ({
+		shareTemplateId: '95A06A1683C80BECC99BE5CC7B6D706B',
+		shareTemplateData: {
+			"bottomBtnTxt": "我也试试",
+		},
+		title: 'LoveLive! 性格测试',
+		imageUrl: "https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/image/share_main.jpg"
+	}))
+	// #endif
+
+
+	const innerAudioContext = uni.createInnerAudioContext();
+	innerAudioContext.autoplay = false;
+	innerAudioContext.loop = true;
+
 	const windowHeight = ref(0);
 
-	onLoad((option) => {
+	onLoad(() => {
 		uni.getSystemInfo({
 			success: (res) => {
-				let width = res.windowWidth;
 				let height = res.windowHeight;
 				windowHeight.value = height;
 			}
 		});
+
+		innerAudioContext.src = 'https://mp-2c99f6c1-3ff7-4d9a-8efd-ec1c8e02128a.cdn.bspapp.com/static/audio/main.mp3';
 	})
-	
-	const innerAudioContext = uni.createInnerAudioContext();
-	innerAudioContext.autoplay = false;
-	innerAudioContext.loop = true;
-	innerAudioContext.src = "/static/main.mp3";
-	
-	
-	onShow((option) => {
-		innerAudioContext.play();
+
+	onShow(() => {
+		innerAudioContext.play()
 	})
+
+	onUnload(() => {
+		innerAudioContext.stop()
+	})
+
 	onHide(() => {
-		innerAudioContext.stop();
+		innerAudioContext.stop()
 	})
 </script>
 
