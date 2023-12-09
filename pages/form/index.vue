@@ -342,13 +342,15 @@
 			<swiper v-if="questions.length" disable-touch circular :current="currentQuestionIndex">
 				<swiper-item v-for="({ question, options }, index) in questions" :key="question">
 					<view class="form__item" required>
-						<text class="question__text">{{ question }}</text>
-						<radio-group class="question__options" @change="({ detail }) => answer[index] = detail.value">
-							<label v-for="(option, index) in options" :key="option">
-								<radio :value="propertys[index]" />
-								<text>{{ option }}</text>
-							</label>
-						</radio-group>
+						<view class="form__item__question">
+							<text class="question__text">{{ question }}</text>
+							<radio-group class="question__options" @change="({ detail }) => answer[index] = detail.value">
+								<label v-for="(option, index) in options" :key="option">
+									<radio :value="propertys[index]" />
+									<text>{{ option }}</text>
+								</label>
+							</radio-group>
+						</view>
 						<!-- 						<button type="primary" class="next-button" @tap="isLastQuestion ? submit() : next()"
 							:disabled="!answer[index]">{{ isLastQuestion ? '提交' : '下一题' }}</button> -->
 						<view class="img-btn-view">
@@ -390,7 +392,6 @@
 
 	.options {
 		position: absolute;
-		// left:300rpx;
 		top: 10rpx;
 	}
 
@@ -403,24 +404,41 @@
 		}
 
 		&__options {
-			display: grid;
-			grid-row-gap: 30rpx;
+			padding: 80rpx 0 0;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			top:30rpx;
 		}
 	}
 
 	.form {
 		&__item {
-			padding: 40rpx 30rpx 0;
+			padding: 100rpx 30rpx 0;
+			height: 85%;
+			display: flex;
+			flex-direction: column;
+			
+			&__question {
+				padding: 30rpx 0 0;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+			}
 		}
 	}
 
 	.next-button {
 		margin-top: 60rpx;
+		margin-bottom: 60rpx;
+		width: 100%;
 		padding: 10rpx 0;
 	}
 
 	.img-btn-view {
-		position: relative;
+		position: relative; 
+		height: 300rpx;
 	}
 
 	.img-btn-view>button {
@@ -428,8 +446,8 @@
 		color: transparent;
 		width: 500rpx;
 		height: 100rpx;
-		left: 0rpx;
-		top: 0rpx;
+		left: 5rpx;
+		top: 140rpx;
 	}
 
 	.img-btn {
@@ -437,6 +455,6 @@
 		width: 500rpx;
 		height: 100rpx;
 		left: 100rpx;
-		top: 0rpx;
+		top: 200rpx;
 	}
 </style>
